@@ -1,0 +1,25 @@
+import javax.swing.JFrame;
+import javax.swing.JLabel;
+
+public class First {
+
+	public static void main(String[] args) {
+		JFrame frame = new JFrame("창이름");
+		
+		JPanel panel = new JPanel();
+		
+		JLabel label = new JLabel("기본값");
+		label.setText("잘가");
+		
+		JLabel label2 = new JLabel();
+		label2.setText("가지마");
+		
+		frame.add(label);
+		frame.add(label2);
+		
+		frame.pack();			//안에 있는 요소만큼 화면이 늘어남.
+		frame.setVisible(true);
+		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+	}
+
+}
