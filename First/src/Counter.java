@@ -1,7 +1,10 @@
 import java.awt.Dimension;
+import java.awt.Image;
+import java.awt.ImageCapabilities;
 import java.awt.Toolkit;
 
 import javax.swing.ButtonGroup;
+import javax.swing.ImageIcon;
 import javax.swing.JButton;
 import javax.swing.JCheckBox;
 import javax.swing.JComboBox;
@@ -62,6 +65,13 @@ public class Counter {
 
 		// 버튼
 		JButton bts = new JButton("알미~");
+		
+		ImageIcon ii = new ImageIcon("src/images/signup.PNG");
+		ImageIcon ii작은 = new ImageIcon(ii.getImage().getScaledInstance(338/3, 347/3, Image.SCALE_DEFAULT));
+		JLabel lbSignUp = new JLabel(ii작은);
+		ImageIcon ii깐쇼새우 = new ImageIcon("src/images/깐쇼새우.jpg");
+		ImageIcon ii작은깐쇼새우 = new ImageIcon(ii깐쇼새우.getImage().getScaledInstance(195/2, 130/2, Image.SCALE_DEFAULT));
+		JButton bt깐쇼새우 = new JButton(ii작은깐쇼새우);
 
 		panel.add(lbId);
 		panel.add(tfId);
@@ -78,6 +88,9 @@ public class Counter {
 		panel.add(cxEdu);
 
 		panel.add(bts);
+		
+		panel.add(lbSignUp);
+		panel.add(bt깐쇼새우);
 
 		frame.add(panel);
 		frame.pack();
