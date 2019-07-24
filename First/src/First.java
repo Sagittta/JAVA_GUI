@@ -21,7 +21,7 @@ public class First {
 		frame.add(panel);
 		
 		frame.pack();			//안에 있는 요소만큼 화면이 늘어남.
-		frame.setVisible(true);
+		frame.setVisible(true);				//창이 화면에 보임.
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 	}
 
